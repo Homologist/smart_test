@@ -39,15 +39,19 @@ jobs:
 
       # run tests!
       - run:
-          name: run tests
+          name: run rspec
           command: |
             mkdir /tmp/test-results
             TEST_FILES="$(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)"
-            
+
             bundle exec rspec --format progress \
                             --out /tmp/test-results/rspec.xml \
                             --format progress \
                             $TEST_FILES
+      - run:
+          name: cucumber
+          command: |
+            bundle exec cucumber --format junit --out junit.xml
 
       # collect reports
       - store_test_results:

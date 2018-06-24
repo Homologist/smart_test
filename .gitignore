@@ -6,6 +6,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+/junit.xml/
 
 # rspec failure tracking
 .rspec_status
