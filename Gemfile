@@ -10,7 +10,6 @@ ruby "2.4.3"
 gem 'awesome_print',             '~> 1.7'
 gem 'dotenv',                    '~> 2.1.1'
 gem 'dry-initializer'
-gem 'jbuilder',                  '2.6.0'
 gem "rubycritic"
 gem 'sdoc',                      '~> 0.4.0', group: :doc
 gem "seedbank"
