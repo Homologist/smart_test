@@ -7,7 +7,7 @@ When("I parse the file") do
 end
 
 When("I sort the file by most views") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @ordered_list = Sort.new(log: @parsed_log).sort_by_most_views
 end
 
 Then("I output the result by most views") do
@@ -15,7 +15,7 @@ Then("I output the result by most views") do
 end
 
 When("I sort the file by most unique page views") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @ordered_list = Sort.new(log: @parsed_log).sort_by_most_unique_page_views
 end
 
 Then("I output the result by most unique page views") do
