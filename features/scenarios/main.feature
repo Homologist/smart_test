@@ -3,7 +3,7 @@ Feature: Receive an ordered list of website
   I see the input in the console
 
   Scenario: I want websites to be ordered by most views
-    Given a file log files
+    Given a log files
     When I parse the file
     And I sort the file by most views
     Then I output the result by most views

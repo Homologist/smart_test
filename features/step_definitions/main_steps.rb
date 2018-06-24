@@ -1,9 +1,9 @@
-Given("a file log files") do
-  pending # Write code here that turns the phrase above into concrete actions
+Given("a log files") do
+  @path = "spec/fixtures/webserver.log"
 end
 
 When("I parse the file") do
-  pending # Write code here that turns the phrase above into concrete actions
+  @parsed_log = Parser.new(path: @path)
 end
 
 When("I sort the file by most views") do
