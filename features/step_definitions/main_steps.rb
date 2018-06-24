@@ -3,7 +3,7 @@ Given("a log files") do
 end
 
 When("I parse the file") do
-  @parsed_log = Parser.new(path: @path)
+  @parsed_log = SmartTest::Parser.new(path: @path).parse
 end
 
 When("I sort the file by most views") do
