@@ -9,7 +9,7 @@ Feature: Receive an ordered list of website
     Then I output the result by most views
 
   Scenario: I want websites to be ordered by most unique page views
-    Given a file log files
+    Given a log files
     When I parse the file
     And I sort the file by most unique page views
     Then I output the result by most unique page views
