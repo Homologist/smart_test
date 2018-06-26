@@ -1,6 +1,6 @@
-require_relative "smart_test/version"
-require_relative "smart_test/mapper"
-require_relative "smart_test/sort"
+require_relative 'smart_test/version'
+require_relative 'smart_test/mapper'
+require_relative 'smart_test/sort'
 
 module SmartTest
   def self.run(args = nil)
