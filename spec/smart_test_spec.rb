@@ -3,7 +3,7 @@ RSpec.describe SmartTest do
     expect(SmartTest::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(true).to eq(true)
+  it "run cli" do
+    expect{SmartTest.run ["spec/fixtures/webserver.log"]}.to output().to_stdout
   end
 end
