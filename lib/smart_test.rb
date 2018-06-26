@@ -1,4 +1,3 @@
-#!/usr/bin/env ruby
 require_relative "smart_test/version"
 require_relative "smart_test/mapper"
 require_relative "smart_test/sort"
